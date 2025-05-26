@@ -56,3 +56,9 @@ SELECT * FROM sightings
 
 
 
+--------Problem Solution--------
+
+-- Problem 1:
+
+INSERT INTO rangers (name, region) VALUES
+('Derek Fox', ' Coastal Plains')
