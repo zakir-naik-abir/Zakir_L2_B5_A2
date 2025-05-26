@@ -80,3 +80,8 @@ SELECT r.name, count(s.sighting_id) AS total_sightings FROM rangers r
 LEFT JOIN sightings s ON r.ranger_id = s.ranger_id WHERE s.sighting_id > 0
 GROUP BY r.name 
 
+-- Problem 5:
+
+SELECT s.common_name FROM species s
+LEFT JOIN sightings si ON s.species_id = si.species_id WHERE si.sighting_id IS NULL
+
